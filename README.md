@@ -1,4 +1,4 @@
-# reuired packages installation
+<!-- # reuired packages installation
 
 # npm i  -D tailwindcss
 
@@ -12,4 +12,4 @@
 
 ## npm install react-icons
 
-## npm i react-router-dom
+## npm i react-router-dom -->
