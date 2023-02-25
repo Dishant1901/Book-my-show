@@ -1,6 +1,6 @@
 # reuired packages installation
 
-## npm i  -D tailwindcss
+# npm i  -D tailwindcss
 
 ## npm i react-slick
 
