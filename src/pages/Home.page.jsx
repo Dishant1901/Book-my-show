@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 // compoenents
 import EntertainmentCardSlider from '../components/Entertainment/EnterainmentCard.component';
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel.component';
@@ -11,6 +12,11 @@ const HomePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvent, setOnlineStreamEvent] = useState([]);
+
+  useEffect(()=>{
+
+    
+  },[])
 
   return (
     <>
