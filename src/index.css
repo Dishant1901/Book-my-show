@@ -14,6 +14,6 @@ body{
 }
 
 .slick-next{
-    left: 3% !important;
+    right: 3% !important;
     z-index: 1;
 }

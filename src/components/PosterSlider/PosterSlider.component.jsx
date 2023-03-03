@@ -1,8 +1,17 @@
 import React from 'react'
+import Slider from 'react-slick';
+import Poster from '../Poster/Poster.components';
 
-const PosterSlider = () => {
+
+const PosterSlider = (props) => {
+
+  const {posters,title,subject,isDark,config} =props;
+  const settings={};
+
   return (
-    <div>PosterSlider</div>
+    <>
+      <div className='flex'></div>
+    </>
   )
 }
 

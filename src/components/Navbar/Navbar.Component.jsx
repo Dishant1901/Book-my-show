@@ -34,7 +34,7 @@ function NavMd() {
 
 function NavLg() {
   return <>
-    <div className='container flex mx-auto px-4 items-centre justify-between'>
+    <div className='container flex mx-12 px-4 items-centre justify-between'>
 
       <div className='flex items-centre w-1/2 gap-3'>
         <div className='w-10 h-10'>
@@ -56,7 +56,7 @@ function NavLg() {
         <span className='text-gray-200 text-base flex items-centre cursor-pointer hover:text-white'>
           Gwalior <BiChevronDown/>
         </span>
-        <button className='bg-red-600 text-white px-2 py-1 text-sm rounded'>
+        <button className='bg-red-600 text-white px-2  text-sm rounded'>
           Sign In
         </button>
         <div className='w-8 h-8 text-white'>
