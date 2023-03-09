@@ -14,15 +14,23 @@ const HomePage = () => {
   const [onlineStreamEvent, setOnlineStreamEvent] = useState([]);
 
   useEffect(()=>{
+    const requestTopRatedMovies = async ()=>{
+      const getTopRatedMovies = await axios.get(
+      'https://api.themoviedb.org/3/movie/top_rated?api_key=8b06a08969b696df04f46583b900e2bd '
+      ); 
 
+      setRecommendedMovies(getTopRatedMovies.data.results);
+    };
+
+    requestTopRatedMovies();
     
-  },[])
+  },[]);
 
   return (
     <>
       <HeroCarousel />
 
-      <div className='container mx-auto px-4 md:px-12 my-8'>
+      <div className='container mx-auto px-4 md:px-12 my-8 '>
         <h1 className='text-2xl font-bold text-gray-800 sm:ml-3 ml-0 my-3'>
           The best of Entertainment</h1>
         <EntertainmentCardSlider />
@@ -30,6 +38,8 @@ const HomePage = () => {
 
       <div className='container mx-auto px-4 md:px-12 my-8'>
         <PosterSlider
+
+        // joh ye poster component call hoga usme ye sb as props pass honge
           title="Recommended Movies"
           subject="List of recommended movies"
           posters={recommendedMovies}
@@ -48,6 +58,7 @@ const HomePage = () => {
           </div>
 
           <PosterSlider
+          // joh ye poster component call hoga usme ye sb as props pass honge
            title="Premiers"
            subject="Brand new realse every Friday"
            posters={premierMovies}
@@ -59,6 +70,7 @@ const HomePage = () => {
       <div className='container mx-auto px-4 md:px-12 my-8'>
 
         <PosterSlider
+        // joh ye poster component call hoga usme ye sb as props pass honge
          title="Online streaming Events"
          subject=""
          posters={onlineStreamEvent}

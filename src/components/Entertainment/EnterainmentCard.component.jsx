@@ -9,7 +9,7 @@ const EnterainmentCard = (props) => {
         <img
             className='w-full h-full rounded-lg' 
             src={props.src}
-            alt="entertainkent"
+            alt="entertainment"
           />
 
       </div>
@@ -37,9 +37,18 @@ const EnterainmentCardSlider =() =>{
 const settings = {
   infinite: true,
   autoplay: false,
+  // ye h for kitni der bd autoplay ho
+  // autoplaySpeed:5000,
+  // ye btata h kisspeed se scroll ho
+  speed:1000,
   slidesToShow : 5,
   slidesToScroll:4,
   initialSlide:0,
+  // cssEase: "linear",
+  // centerPadding: "60px",
+  // className: "center",
+  // centerMode: true,
+  // dots: true,
   responsive :[
     {
       breakpoint: 1024,
@@ -78,8 +87,8 @@ const settings = {
   return (
     <>
       <Slider {...settings}>
-        {EntrtainmentImage.map((image) =>(
-          <EnterainmentCard src={image} />
+        {EntrtainmentImage.map((image ,index) =>(
+          <EnterainmentCard src={image} key={index} />
         ))}
 
       </Slider>
