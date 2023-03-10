@@ -36,9 +36,9 @@ const EnterainmentCardSlider =() =>{
 
 const settings = {
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   // ye h for kitni der bd autoplay ho
-  // autoplaySpeed:5000,
+  autoplaySpeed:4000,
   // ye btata h kisspeed se scroll ho
   speed:1000,
   slidesToShow : 5,
@@ -46,9 +46,9 @@ const settings = {
   initialSlide:0,
   // cssEase: "linear",
   // centerPadding: "60px",
-  // className: "center",
+  className: "center",
   // centerMode: true,
-  // dots: true,
+  dots: true,
   responsive :[
     {
       breakpoint: 1024,
