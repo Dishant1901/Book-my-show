@@ -132,7 +132,7 @@ useEffect (()=>{
       isDark={false}
        />
     </div>
-    <div><h1 className='text-2xl font-bold'>Hello Asthma</h1></div>
+    
     <div className='my-8  '>
       <hr />
     </div> 
