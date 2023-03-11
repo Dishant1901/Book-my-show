@@ -17,7 +17,7 @@ const HomePage = () => {
   useEffect(()=>{
     const requestPopularMovies = async ()=>{
       const getPopularMovies = await axios.get(
-      '/movie/popular '
+      '/movie/popular'
       ); 
 
       setRecommendedMovies(getPopularMovies.data.results);
@@ -31,7 +31,7 @@ const HomePage = () => {
   useEffect(()=>{
     const requestTopRatedMovies = async ()=>{
       const getTopRatedMovies = await axios.get(
-      '/movie/top_rated '
+      '/movie/top_rated'
       ); 
 
       setPremierMovies(getTopRatedMovies.data.results);
@@ -45,7 +45,7 @@ const HomePage = () => {
   useEffect(()=>{
     const upcomingMovies = async ()=>{
       const getTopRatedMovies = await axios.get(
-      '/movie/upcoming '
+      '/movie/upcoming'
       ); 
 
       setOnlineStreamEvent(getTopRatedMovies.data.results);

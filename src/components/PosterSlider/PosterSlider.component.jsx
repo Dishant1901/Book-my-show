@@ -5,7 +5,7 @@ import Poster from '../Poster/Poster.components';
 
 const PosterSlider = (props) => {
 
-  const {posters,title,subject,isDark} =props;
+  const {posters,title,subject,isDark,config} =props;
   
   const settings={
     infinite:false,
@@ -60,9 +60,9 @@ const PosterSlider = (props) => {
       </div>
 
       <Slider {...settings}>
-         {posters.map((each) =>(
+         {posters.map((each,index) =>(
           // idr isDark={isDark} apn ek new prop pass krrhe h
-          <Poster {...each} isDark={isDark} />
+          <Poster {...each} isDark={isDark} key={index} />
          ))}
 
          {/* kya apn is poster component ko is component k andr bna skte h?
