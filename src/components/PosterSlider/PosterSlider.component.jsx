@@ -59,18 +59,30 @@ const PosterSlider = (props) => {
         </p>
       </div>
 
-      <Slider {...settings}>
+      
+
+         {config && (<Slider {...config}>
          {posters.map((each,index) =>(
           // idr isDark={isDark} apn ek new prop pass krrhe h
           <Poster {...each} isDark={isDark} key={index} />
-         ))}
+          ))}
+          </Slider>
+          )}
+
+          {!config && (<Slider {...settings}>
+         {posters.map((each,index) =>(
+          // idr isDark={isDark} apn ek new prop pass krrhe h
+          <Poster {...each} isDark={isDark} key={index} />
+          ))}
+          </Slider>
+          )}
+          
 
          {/* kya apn is poster component ko is component k andr bna skte h?
          try it out asap     */}
       
 
 
-      </Slider>
     </>
   );
 };
