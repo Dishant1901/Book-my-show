@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BiChevronDown, BiMenu, BiSearch } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 // Navbar for small screen
 function NavSm() {
@@ -70,6 +71,9 @@ function NavLg() {
         <span className='text-gray-200 h-8 text-base flex items-centre cursor-pointer hover:text-white'>
           Gwalior <BiChevronDown className='h-6'/>
         </span>
+        <Link to='/plays' className='text-gray-200 text-base flex iteems-center cursor-pointer hover:text-white ' > 
+        Plays
+        </Link>
         <button className='bg-red-600 text-white px-2 h-8 text-sm rounded'>
           Sign In
         </button>
